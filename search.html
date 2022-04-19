@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movers and Shakers</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Our Icon -->
+  <link rel="shortcut icon" href="Images/web4.png" type="image/x-icon" />
+  
+ <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/>
+ <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+  </head>
+    <!-- Link to JS -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="searchbar.js"></script>
+   <!-- Header e.e -->
+  <header>
+      <!-- nav -->
+    <div class="nav container">
+        <a href="index.html" class="logo">
+       Caribbean<span>Lifestyle</span>
+      </a>
+       <!-- Search Box for Youtube API -->
+      
+      <!-- Profile -->
+      <a href="#" class="user">
+        <img src="Images/Eren.jpg" alt="" class="user-img">
+      </a>
+      
+       <div class="navbar">
+            <a href="index.html" class="nav-link nav-active">
+              <i class='bx bxs-home'></i>
+              <span class="nav-link-title">Home</span>
+            </a>
+          <a href="Trending.html" class="nav-link">
+              <i class='bx bxs-hot'></i>
+              <span class="nav-link-title">Trending</span>
+            </a>
+          <a href="Popular.html" class="nav-link">
+              <i class='bx bx-accessibility'></i>
+              <span class="nav-link-title">Popular Artist</span>
+            </a>
+          <a href="mp3a.html" class="nav-link">
+              <i class='bx bx-music'></i>
+              <span class="nav-link-title">MP3</span>
+            </a>
+          <a href="playlist.html" class="nav-link">
+              <i class='bx bx-compass'></i>
+              <span class="nav-link-title">Browser</span>
+            </a>
+           <a href="search.html" class="nav-link">
+             <i class='bx bxl-youtube'></i>
+              <span class="nav-link-title">Youtube Search</span>
+            </a>
+          </div>
+        </div>
+  </header>
+  <body style="background-color:#1e1e2a;">
+    <div class="container">
+      <br />
+      <h1 class="text-center" style="color:white;" >Search</h1>
+      <br />
+      <form id="myForm" autocomplete="off">
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            id="search"
+            placeholder="Enter Artist + Track"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button id="btn" class="btn btn-danger btn-block">
+            Search song
+          </button>
+        </div>
+      </form>
+      <table style=" color:white; display: none" id="table" class="table table-striped">
+        <thead >
+          <tr>
+            <th>Thumbnail</th>
+            <th>Title</th>
+            <th>Visit Channel</th>
+            <th >Copy video id</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+      <div id="pager">
+        <ul id="pagination" class="pagination-sm"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jquery.twbsPagination.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $("#beforedate").datepicker({});
+    $("#afterdate").datepicker({});
+  </script>
+  <script src="search.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+  <script>
+    iFrameResize({ log: false, minHeight: 100 }, "#buttonApi");
+  </script>
+</html>

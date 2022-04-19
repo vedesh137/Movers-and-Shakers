@@ -1,0 +1,37 @@
+.form-group2 {
+  margin-top: 10rem;
+    max-width: 4500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+  padding: 8px 15px;
+    border-radius: 4rem;
+  margin-right: 1rem;
+  background:white;
+   }
+.headingall{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d2e37;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% /5%);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+#search.form-control{
+   width: 100%;
+  border: none;
+  outline: none;
+  color:black;
+  background: transparent;
+  font-size: 0.938rem;
+}
+
+
+
+
+
+
+

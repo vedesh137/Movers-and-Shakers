@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Popcaan </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+  <!-- Our Icon -->
+  <link rel="shortcut icon" href="Images/web4.png" type="image/x-icon" />
+  
+ <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/>
+  
+
+
+</head>
+
+<body>
+   <!-- Link to JS -->
+  <script src="youtubeapi.js"></script>
+ 
+   <!-- Header e.e -->
+  <header>
+      <!-- nav -->
+    <div class="nav container">
+        <a href="index.html" class="logo">
+       Caribbean<span>Lifestyle</span>
+      </a>
+       <!-- Search Box for Youtube API -->
+     
+      <!-- Profile -->
+      <a href="#" class="user">
+        <img src="Images/Eren.jpg" alt="" class="user-img">
+      </a>
+      
+       <div class="navbar">
+            <a href="index.html" class="nav-link nav-active">
+              <i class='bx bxs-home'></i>
+              <span class="nav-link-title">Home</span>
+            </a>
+          <a href="Trending.html" class="nav-link">
+              <i class='bx bxs-hot'></i>
+              <span class="nav-link-title">Trending</span>
+            </a>
+          <a href="Popular.html" class="nav-link">
+              <i class='bx bx-accessibility'></i>
+              <span class="nav-link-title">Popular Artist</span>
+            </a>
+          <a href="mp3a.html" class="nav-link">
+              <i class='bx bx-music'></i>
+              <span class="nav-link-title">MP3</span>
+            </a>
+          <a href="playlist.html" class="nav-link">
+              <i class='bx bx-compass'></i>
+              <span class="nav-link-title">Browser</span>
+            </a>
+           <a href="search.html" class="nav-link">
+             <i class='bx bxl-youtube'></i>
+              <span class="nav-link-title">Youtube Search</span>
+            </a>
+          </div>
+        </div>
+  </header>
+ <section class="home container" id="home">
+     <section class="about">
+       <div class="mains">
+          <img src="Images/Popcaan.jpg" alt="" class="artist-img">
+         
+          <div class="about-text">
+            
+            <h1>Popcaan</h1>
+            <h5>Jamaican deejay, singer and songwriter</h5>
+      <p>Andre Hugh Sutherland, known professionally as Popcaan, is a Jamaican deejay, singer and songwriter from the parish of St. Thomas. In 2008, Popcaan joined Vybz Kartel's Gaza Music Empire. In 2010, he released his breakthrough international hit "Clarks" with Kartel, an ode to the popular shoe brand.</p>
+          </div>
+       </div>
+        <div class="heading2">
+        <h2 class="heading-title2">Popcaan Youtube Music Videos</h2>
+          </div>
+        <div class="container-artist">
+      <br />
+          <h1 hidden id="mySpoifyid" style="color:white;" >62DmErcU7dqZbJaDqwsqzR</h1>
+      <h1 id="myH1" class="text-center" style="color:white;" >Popcaan</h1>
+      <br />
+      <table style="color:white;" id="table" class="table table-striped">
+        <thead >
+          <tr>
+            <th>Thumbnail</th>
+            <th>Title</th>
+            <th>Visit Channel</th>
+            <th >Copy video id</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+      <div id="pager">
+        <ul id="pagination" class="pagination-sm"></ul>
+      </div>
+    </div>
+       </section>
+   
+   
+ </section>
+  
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jquery.twbsPagination.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <script src="Top10yt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
+  <script>
+    iFrameResize({ log: false, minHeight: 100 }, "#buttonApi");
+  </script>
+  
+
+       <link rel="stylesheet" type="text/css" href="main.css">
+<h2 style="color:white" class="heading-title2">Popcaan Songs</h2>
+
+ <div class="container2">        
+        <form action="">
+            <input type="hidden" id='hidden_token'>
+            <div class="col-sm-6 form-group row mt-4 px-0">       
+        </form>        
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <div class="list-group song-list">
+                    
+                </div>                                             
+            </div>
+            <div class="offset-md-1 col-sm-4" id="song-detail">          
+            </div>
+        </div>   
+    </div>
+
+ <script src="Top10spo2.js" type="text/javascript"></script>
+  <br></br>
+  <br></br>
+  </body>
+  </html>
